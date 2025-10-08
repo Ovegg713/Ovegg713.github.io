@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Ovegg | Innovación en incubación aviar: incubadoras, nacedoras y soluciones</title>
+  <meta name="description" content="Ovegg diseña e integra tecnología para incubación aviar: incubadoras, nacedoras y criadoras eficientes con enfoque en bienestar animal y ahorro energético. Soporte técnico y envío en España." />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+  <meta http-equiv="Content-Language" content="es" />
+  <meta name="theme-color" content="#0f172a" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://ovegg713.github.io/" />
+
+  <!-- Performance: fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Ovegg" />
+  <meta property="og:title" content="Ovegg | Innovación en incubación aviar: incubadoras, nacedoras y soluciones" />
+  <meta property="og:description" content="Ovegg diseña e integra tecnología para incubación aviar: incubadoras, nacedoras y criadoras eficientes con enfoque en bienestar animal y ahorro energético. Soporte técnico y envío en España." />
+  <meta property="og:url" content="https://ovegg713.github.io/" />
+  <meta property="og:image" content="https://ovegg713.github.io/og-image.jpg" />
+  <meta property="og:locale" content="es_ES" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ovegg | Innovación en incubación aviar: incubadoras, nacedoras y soluciones" />
+  <meta name="twitter:description" content="Ovegg diseña e integra tecnología para incubación aviar: incubadoras, nacedoras y criadoras eficientes con enfoque en bienestar animal y ahorro energético. Soporte técnico y envío en España." />
+  <meta name="twitter:image" content="https://ovegg713.github.io/og-image.jpg" />
+
+  <style>
+    :root { --bg:#ffffff; --text:#0b0b0b; --muted:#64748b; --line:#e5e7eb; --primary:#0f172a; --primary-contrast:#ffffff; }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; font-family:'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:var(--text); background:var(--bg); }
+    a { color:inherit; text-decoration:none; }
+    img { max-width:100%; display:block; }
+    .container { max-width:1100px; margin:0 auto; padding:0 16px; }
+    .site-header { position:sticky; top:0; background:#ffffffcc; backdrop-filter:blur(8px); border-bottom:1px solid var(--line); z-index:50; }
+    .nav-container { display:flex; align-items:center; justify-content:space-between; padding:14px 0; }
+    .brand { display:flex; gap:10px; align-items:center; }
+    .logo { width:36px; height:36px; border-radius:12px; background:var(--primary); }
+    .brand-name { font-weight:800; }
+    .nav { display:flex; align-items:center; gap:12px; }
+    .nav a { padding:8px 10px; border-radius:10px; font-size:14px; }
+    .nav a:hover { background:#f3f4f6; }
+    .nav-toggle { display:none; font-size:22px; background:none; border:0; }
+    .dropdown { position:relative; }
+    .dropbtn { background:none; border:0; padding:8px 10px; border-radius:10px; font-size:14px; cursor:pointer; }
+    .dropbtn:hover { background:#f3f4f6; }
+    .dropdown-content { position:absolute; left:0; top:calc(100% + 8px); width:280px; background:#fff; border:1px solid var(--line); border-radius:16px; box-shadow:0 10px 30px rgba(0,0,0,.08); padding:8px; display:none; }
+    .dropdown-content a { display:flex; gap:10px; padding:10px; border-radius:12px; font-size:14px; }
+    .dropdown-content a:hover { background:#f9fafb; }
+    .dropdown:hover .dropdown-content { display:block; }
+    .hero { padding:64px 0; }
+    .hero-grid { display:grid; grid-template-columns:1.1fr .9fr; gap:32px; align-items:center; }
+    .eyebrow { letter-spacing:.14em; text-transform:uppercase; color:var(--muted); font-size:12px; }
+    h1 { font-size:38px; line-height:1.1; margin:8px 0 8px; }
+    .sub { color:var(--muted); }
+    .hero-actions { display:flex; gap:12px; margin-top:16px; }
+    .btn { display:inline-block; padding:12px 18px; border-radius:12px; font-weight:700; font-size:14px; border:1px solid transparent; }
+    .btn-primary { background:var(--primary); color:var(--primary-contrast); }
+    .btn-outline { border-color:#d1d5db; }
+    .values { background:#f9fafb; padding:48px 0; }
+    .cards-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .card { background:#fff; border:1px solid var(--line); border-radius:20px; padding:20px; box-shadow:0 6px 16px rgba(0,0,0,.04); }
+    .card .icon { width:52px; height:52px; border-radius:16px; background:#eef2ff; margin-bottom:12px; }
+    .lines { padding:64px 0; }
+    .section-head { text-align:center; margin-bottom:18px; }
+    .section-head h2 { font-size:32px; margin:6px 0; }
+    .grid-4 { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+    .line-card { border:1px solid var(--line); border-radius:22px; overflow:hidden; display:block; transition:transform .15s ease, box-shadow .15s ease; }
+    .line-card:hover { transform:translateY(-3px); box-shadow:0 10px 24px rgba(0,0,0,.06); }
+    .line-card .img { aspect-ratio:4/3; background:#e5e7eb; }
+    .line-info { padding:16px; }
+    .catalog { background:#f9fafb; padding:64px 0; }
+    .cat-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:center; }
+    .cat-media { aspect-ratio:4/3; border-radius:24px; background:#e5e7eb; }
+    .contact { padding:64px 0; background:linear-gradient(135deg,#0b0f1a,#000); color:#fff; }
+    .contact-inner { display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:center; }
+    .contact .light { color:#cbd5e1; }
+    .contact-form { background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.2); border-radius:20px; padding:16px; }
+    .contact-form .row { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .contact-form input, .contact-form textarea { width:100%; padding:12px; border-radius:12px; border:1px solid rgba(255,255,255,.25); background:rgba(255,255,255,.08); color:#fff; }
+    .contact-form input::placeholder, .contact-form textarea::placeholder { color:#cbd5e1; }
+    .btn-invert { background:#fff; color:#000; }
+    .btn-ghost { border-color:rgba(255,255,255,.4); color:#fff; }
+    .metrics { padding:48px 0; }
+    .metrics-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; background:#f3f4f6; border-radius:24px; padding:24px; text-align:center; }
+    .kpi { font-size:32px; font-weight:800; }
+    .label { font-size:12px; color:var(--muted); }
+    .site-footer { border-top:1px solid var(--line); padding-top:32px; }
+    .footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:16px; }
+    .muted { color:var(--muted); font-size:14px; margin:10px 0; }
+    .socials a { display:inline-block; width:36px; height:36px; background:#111; border-radius:10px; margin-right:8px; }
+    .foot-title { font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
+    .foot-list { list-style:none; padding:0; margin:8px 0; }
+    .foot-list li { margin:6px 0; }
+    .copyright { text-align:center; font-size:12px; color:var(--muted); border-top:1px solid var(--line); padding:16px 0; margin-top:20px; }
+
+    @media (max-width: 980px) {
+      .hero-grid { grid-template-columns:1fr; }
+      .cards-3 { grid-template-columns:1fr; }
+      .grid-4 { grid-template-columns:1fr 1fr; }
+      .cat-grid { grid-template-columns:1fr; }
+      .contact-inner { grid-template-columns:1fr; }
+      .metrics-grid { grid-template-columns:1fr 1fr; }
+      .footer-grid { grid-template-columns:1fr 1fr; }
+    }
+    @media (max-width: 720px) {
+      .nav { display:none; flex-direction:column; align-items:flex-start; padding:10px; border-top:1px solid var(--line); }
+      .nav.show { display:flex; }
+      .nav-toggle { display:block; }
+      .grid-4 { grid-template-columns:1fr; }
+      .metrics-grid { grid-template-columns:1fr; }
+      .footer-grid { grid-template-columns:1fr; }
+      .dropdown:hover .dropdown-content { display:none; }
+      .dropdown .dropdown-content { position:static; display:none; margin-top:6px; }
+      .dropdown.open .dropdown-content { display:block; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="#inicio" class="brand" aria-label="Ovegg - Inicio">
+        <div class="logo" aria-hidden="true"></div>
+        <span class="brand-name">Ovegg</span>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menú" id="navToggle" aria-controls="mainNav" aria-expanded="false">☰</button>
+      <nav class="nav" id="mainNav" role="navigation" aria-label="Navegación principal">
+        <a href="#inicio" title="Inicio Ovegg">Inicio</a>
+        <div class="nav-item dropdown">
+          <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Línea Falcon</button>
+          <div class="dropdown-content" role="menu" aria-label="Submenú Línea Falcon">
+            <a href="#" role="menuitem">Cámara de precalentamiento</a>
+            <a href="#" role="menuitem">Incubadoras</a>
+            <a href="#" role="menuitem">Nacedoras</a>
+            <a href="#" role="menuitem">Criadoras</a>
+            <a href="#" role="menuitem">Vitaminas y accesorios</a>
+          </div>
+        </div>
+        <div class="nav-item dropdown">
+          <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Línea Avícola</button>
+          <div class="dropdown-content" role="menu" aria-label="Submenú Línea Avícola">
+            <a href="#" role="menuitem">Incubación completa</a>
+            <a href="#" role="menuitem">Incubadoras combinadas</a>
+            <a href="#" role="menuitem">Nacedoras</a>
+          </div>
+        </div>
+        <div class="nav-item dropdown">
+          <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Línea Avestruz/Emú</button>
+          <div class="dropdown-content" role="menu" aria-label="Submenú Línea Avestruz/Emú">
+            <a href="#" role="menuitem">Incubadoras</a>
+            <a href="#" role="menuitem">Nacedoras</a>
+          </div>
+        </div>
+        <div class="nav-item dropdown">
+          <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Línea Psitácidas</button>
+          <div class="dropdown-content" role="menu" aria-label="Submenú Línea Psitácidas">
+            <a href="#" role="menuitem">PSI-56</a>
+            <a href="#" role="menuitem">PSI-56 HS</a>
+          </div>
+        </div>
+        <a href="#catalogos" title="Catálogos de incubadoras y nacedoras">Catálogos</a>
+        <a href="#contacto" title="Contacto Ovegg">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">innovación en incubación aviar</p>
+          <h1>Innovación y cuidado que impulsan el futuro de la incubación aviar</h1>
+          <p class="sub">En Ovegg desarrollamos y distribuimos <strong>incubadoras</strong>, <strong>nacedoras</strong> y <strong>criadoras</strong> confiables. Priorizamos el <strong>bienestar animal</strong>, la eficiencia energética y el éxito de cada incubación.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#catalogos">Ver catálogo</a>
+            <a class="btn btn-outline" href="#contacto">Contactar</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <div class="media-placeholder" role="img" aria-label="Equipos de incubación Ovegg">Imagen/Slider</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="values" id="sobre">
+      <div class="container">
+        <h2>Sobre Ovegg</h2>
+        <p>Somos una marca comprometida con la excelencia en <strong>incubación aviar</strong>. Combinamos experiencia técnica, sensibilidad ambiental y atención cercana para diseñar soluciones que respetan la naturaleza de cada especie y mejoran la productividad.</p>
+      </div>
+      <div class="container cards-3" style="margin-top:20px">
+        <article class="card">
+          <div class="icon" aria-hidden="true"></div>
+          <h3>Rapidez</h3>
+          <p>Entregas ágiles, soporte inmediato y servicio técnico cuando más lo necesitas.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"></div>
+          <h3>Innovación</h3>
+          <p>Tecnología eficiente para un control preciso de ambiente, temperatura y humedad.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"></div>
+          <h3>Compromiso</h3>
+          <p>Priorizamos el bienestar animal, la confianza de nuestros clientes y la sostenibilidad.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="lines" id="lineas">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Nuestras líneas</p>
+          <h2>Gama de incubadoras, nacedoras y criadoras</h2>
+          <p class="sub">Soluciones para avicultura, especies exóticas y proyectos profesionales.</p>
+        </div>
+        <div class="grid-4">
+          <a class="line-card" href="#catalogos">
+            <div class="img" role="img" aria-label="Línea Falcon: incubación de alto rendimiento"></div>
+            <div class="line-info">
+              <h3>Línea Falcon</h3>
+              <p>Rendimiento y estabilidad térmica en grandes volúmenes de incubación.</p>
+            </div>
+          </a>
+          <a class="line-card" href="#catalogos">
+            <div class="img" role="img" aria-label="Línea Avícola para alta productividad"></div>
+            <div class="line-info">
+              <h3>Línea Avícola</h3>
+              <p>Equipos fiables para ciclos completos: incubación, nacimiento y cría.</p>
+            </div>
+          </a>
+          <a class="line-card" href="#catalogos">
+            <div class="img" role="img" aria-label="Línea Avestruz y Emú"></div>
+            <div class="line-info">
+              <h3>Línea Avestruz/Emú</h3>
+              <p>Control ambiental adaptado a especies de gran tamaño.</p>
+            </div>
+          </a>
+          <a class="line-card" href="#catalogos">
+            <div class="img" role="img" aria-label="Línea Psitácidas para cría responsable"></div>
+            <div class="line-info">
+              <h3>Línea Psitácidas</h3>
+              <p>Precisión y cuidado para aves de alto valor y sensibilidad.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog" id="catalogos">
+      <div class="container cat-grid">
+        <div class="cat-media" role="img" aria-label="Catálogo Ovegg: incubadoras y nacedoras"></div>
+        <div>
+          <p class="eyebrow">Catálogo general</p>
+          <h3>Explora toda la gama de productos</h3>
+          <p>Incubadoras, nacedoras, criadoras, accesorios y consumibles. Detalles técnicos, capacidades y recomendaciones de uso.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Ver PDF</a>
+            <a class="btn btn-outline" href="#" download>Descargar</a>
+          </div>
+          <p class="muted" style="margin-top:8px">Añadiremos el enlace al PDF cuando lo tengas subido.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="container contact-inner">
+        <div class="contact-copy">
+          <p class="eyebrow light">¿Necesitas asesoramiento?</p>
+          <h3>Estamos listos para ayudarte</h3>
+          <p>Atención de lunes a viernes, de 9:00 a 17:00.</p>
+          <div class="actions">
+            <a class="btn btn-invert" href="tel:+34638882371">Llamar</a>
+            <a class="btn btn-ghost" href="mailto:ovegg@duckgo">Enviar email</a>
+          </div>
+        </div>
+        <form class="contact-form" action="mailto:ovegg@duckgo" method="post" enctype="text/plain">
+          <div class="row">
+            <label class="sr-only" for="c-nombre">Nombre</label>
+            <input id="c-nombre" type="text" name="Nombre" placeholder="Nombre" required>
+            <label class="sr-only" for="c-email">Email</label>
+            <input id="c-email" type="email" name="Email" placeholder="Email" required>
+          </div>
+          <label class="sr-only" for="c-asunto">Asunto</label>
+          <input id="c-asunto" type="text" name="Asunto" placeholder="Asunto">
+          <label class="sr-only" for="c-mensaje">Mensaje</label>
+          <textarea id="c-mensaje" name="Mensaje" rows="5" placeholder="Mensaje"></textarea>
+          <button type="submit" class="btn btn-invert">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Métricas y confianza">
+      <div class="container metrics-grid">
+        <div class="metric"><div class="kpi">+50</div><div class="label">Años de experiencia</div></div>
+        <div class="metric"><div class="kpi">5K+</div><div class="label">Máquinas vendidas</div></div>
+        <div class="metric"><div class="kpi">20+</</div><div class="label">Premios</div></div>
+        <div class="metric"><div class="kpi">30+</div><div class="label">Profesionales</div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand"><div class="logo" aria-hidden="true"></div><div class="brand-name">Ovegg</div></div>
+        <p class="muted"><strong>Ovegg</strong> — Innovación en incubación aviar<br>
+        📞 +34 638 882 371 · ✉️ ovegg@duckgo<br>
+        Comprometidos con la tecnología, la naturaleza y tu éxito.</p>
+        <div class="socials" aria-label="Redes sociales">
+          <a href="#" aria-label="Facebook"></a>
+          <a href="#" aria-label="X"></a>
+          <a href="#" aria-label="Instagram"></a>
+        </div>
+      </div>
+      <div>
+        <div class="foot-title">Líneas</div>
+        <ul class="foot-list">
+          <li><a href="#lineas">Línea Falcon</a></li>
+          <li><a href="#lineas">Línea Avícola</a></li>
+          <li><a href="#lineas">Línea Avestruz/Emú</a></li>
+          <li><a href="#lineas">Línea Psitácidas</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot-title">Otras páginas</div>
+        <ul class="foot-list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#catalogos">Catálogos</a></li>
+          <li><a href="#contacto">Contáctanos</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot-title">Privacidad</div>
+        <ul class="foot-list">
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Términos de servicio</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">© <span id="year"></span> Ovegg. Todos los derechos reservados.</div>
+  </footer>
+
+  <!-- JSON-LD: Organization + Website + FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Ovegg",
+    "url": "https://ovegg713.github.io/",
+    "logo": "https://ovegg713.github.io/logo.png",
+    "email": "ovegg@duckgo",
+    "telephone": "+34638882371",
+    "sameAs": []
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Ovegg",
+    "url": "https://ovegg713.github.io/",
+    "inLanguage": "es-ES",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://ovegg713.github.io/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "¿Envían equipos de incubación en toda España?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, realizamos envíos a toda España peninsular y Baleares. Consultar condiciones para Canarias."
+      }
+    }, {
+      "@type": "Question",
+      "name": "¿Qué garantía ofrecen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ofrecemos garantía oficial del fabricante y soporte técnico postventa. Para detalles de cada equipo, consúltenos."
+      }
+    }, {
+      "@type": "Question",
+      "name": "¿Asesoran sobre capacidad y condiciones de incubación?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, nuestro equipo técnico puede recomendar capacidad, parámetros y mantenimiento según la especie y el objetivo."
+      }
+    }]
+  }
+  </script>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mainNav = document.getElementById('mainNav');
+    if (navToggle) { navToggle.addEventListener('click', () => { 
+      const opened = mainNav.classList.toggle('show'); 
+      navToggle.setAttribute('aria-expanded', opened ? 'true' : 'false');
+    })}
+    document.querySelectorAll('.dropdown .dropbtn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        if (window.matchMedia('(max-width: 720px)').matches) {
+          const parent = e.target.closest('.dropdown');
+          parent.classList.toggle('open');
+          const expanded = parent.classList.contains('open');
+          btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+        }
+      });
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
