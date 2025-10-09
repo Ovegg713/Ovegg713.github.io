@@ -1,0 +1,95 @@
+/* ====== Ovegg – estilos base ====== */
+:root{
+  --brand:#F2C12E;   /* amarillo corporativo */
+  --ink:#0F172A;     /* azul/negro corporativo */
+  --ink-70: rgba(15,23,42,.7);
+  --bg:#ffffff;
+  --muted:#f6f7fb;
+  --radius:16px;
+  --shadow:0 6px 24px rgba(15,23,42,.07);
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.55;
+}
+
+/* Tipografías */
+h1,h2,h3{margin:.5rem 0 1rem}
+h1{font-size:clamp(28px,4vw,40px);font-weight:800}
+h2{font-size:clamp(22px,3vw,30px);font-weight:700}
+h3{font-size:clamp(18px,2.2vw,22px);font-weight:700}
+p{margin:.5rem 0 1rem;color:var(--ink-70)}
+a{color:var(--ink);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* Layout */
+.wrap{max-width:1120px;margin:auto;padding:24px}
+.section{padding:40px 0}
+.grid{display:grid;gap:24px}
+.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:900px){.grid-2,.grid-3{grid-template-columns:1fr}}
+
+/* Header */
+.site-header{
+  background:var(--bg);
+  position:sticky;top:0;z-index:10;
+  border-bottom:1px solid #eef0f6;
+}
+.brand{
+  display:flex;align-items:center;gap:12px;
+  font-weight:800;font-size:22px;color:var(--ink);
+}
+.brand-badge{
+  width:36px;height:36px;border-radius:10px;background:var(--brand);
+  display:grid;place-items:center;box-shadow:var(--shadow)
+}
+.brand-badge:after{
+  content:""; width:16px; height:20px; border:3px solid var(--ink);
+  border-radius:50% 50% 55% 55%/60% 60% 45% 45%;
+  background:#fff3de; box-shadow:-6px -6px 0 0 rgba(255,255,255,.25) inset;
+}
+
+/* Hero */
+.hero{
+  background:linear-gradient(180deg,#fff, #fff 70%, #fafbff);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:32px; margin-top:24px;
+}
+.hero h1{margin-top:0}
+.kicker{letter-spacing:.08em;text-transform:uppercase;font-size:12px;color:var(--ink-70)}
+
+/* Cards / bloques */
+.card{
+  background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);
+  padding:24px;
+}
+
+/* Botones */
+.btn{
+  display:inline-block;padding:12px 18px;border-radius:12px;border:2px solid var(--ink);
+  font-weight:700; transition:.15s; text-decoration:none
+}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--brand);border-color:var(--ink)}
+.btn-outline{background:#fff}
+.btn-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+
+/* Listas de enlaces (catálogo / secciones) */
+.link-list{display:flex;flex-wrap:wrap;gap:10px}
+.link-pill{
+  padding:8px 12px;border-radius:999px;background:var(--muted);border:1px solid #e8eaf2;
+  color:var(--ink-70)
+}
+
+/* Footer */
+.site-footer{
+  margin-top:40px;padding:32px 0;border-top:1px solid #eef0f6;background:#fff
+}
+.small{font-size:14px;color:var(--ink-70)}
