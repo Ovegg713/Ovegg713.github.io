@@ -137,17 +137,24 @@ a:hover{text-decoration:underline}
 .brand img.logo:hover {
   transform: scale(1.05);
   filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.8));
-}
 .brand img.logo {
-  height: 80px;
+  height: 70px;            /* reduce un poco el alto total */
   width: auto;
   display: block;
   object-fit: contain;
   object-position: center;
-  background-color: #FFD633; /* color corporativo de fondo */
-  padding: 8px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  background-color: #FFD633;
+  padding: 4px;            /* menos relleno amarillo */
+  border-radius: 6px;      /* esquinas más suaves */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.brand img.logo:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.8));
+}
+  
 }
 
 .brand img.logo:hover {
