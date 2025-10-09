@@ -87,6 +87,28 @@ a:hover{text-decoration:underline}
   padding:8px 12px;border-radius:999px;background:var(--muted);border:1px solid #e8eaf2;
   color:var(--ink-70)
 }
+/* --- Logo --- */
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.brand img {
+  height: 44px;   /* ajusta aquí si se ve muy pequeño o muy grande */
+  width: auto;
+  display: block;
+}
+
+/* Efecto de brillo sutil en el logo */
+.logo-glow {
+  animation: logoGlow 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 0 rgba(255,255,255,0));
+}
+@keyframes logoGlow {
+  0% { filter: drop-shadow(0 0 0 rgba(255,255,255,0)); }
+  50% { filter: drop-shadow(0 0 6px rgba(255,255,255,0.6)); }
+  100% { filter: drop-shadow(0 0 0 rgba(255,255,255,0)); }
+}
 
 /* Footer */
 .site-footer{
