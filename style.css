@@ -127,41 +127,19 @@ a:hover{text-decoration:underline}
 .small{font-size:14px;color:var(--ink-70)}
 
 .brand img.logo {
-  height: 48px;
-  width: auto;
-  display: block;
-  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.6));
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.brand img.logo:hover {
-  transform: scale(1.05);
-  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.8));
-.brand img.logo {
-  height: 70px;            /* reduce un poco el alto total */
+  height: 65px;               /* tamaño del logo visible */
   width: auto;
   display: block;
   object-fit: contain;
   object-position: center;
-  background-color: #FFD633;
-  padding: 4px;            /* menos relleno amarillo */
-  border-radius: 6px;      /* esquinas más suaves */
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  background-color: #FFD633;  /* amarillo corporativo */
+  padding: 2px;               /* ⚠️ aquí reducimos el borde amarillo */
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .brand img.logo:hover {
   transform: scale(1.05);
-  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.8));
-}
-  
-}
-
-.brand img.logo:hover {
-  transform: scale(1.05);
-  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.8));
-}
-.brand img.logo {
-  transform: scale(1.6);
-  transform-origin: center;
+  filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.7));
 }
