@@ -1,381 +1,472 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- SEO básico -->
   <title>Ovegg | Innovación en incubación aviar</title>
-  <meta name="description" content="Ovegg desarrolla y distribuye incubadoras, nacedoras y criadoras confiables para la industria aviar. Innovación, bienestar animal y eficiencia energética.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://ovegg713.github.io/">
+  <meta name="description" content="Ovegg: incubadoras, nacedoras, criadoras y cámaras de precalentamiento. Bienestar animal, eficiencia energética y resultados consistentes para avicultura y especies exóticas." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ovegg713.github.io/" />
 
   <!-- Favicons -->
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="alternate icon" href="favicon.png" type="image/png">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <!-- Estilos principales -->
-  <link rel="stylesheet" href="style.css">
-  <!-- Open Graph / Redes Sociales -->
-  <meta property="og:title" content="Ovegg | Innovación en incubación aviar">
-  <meta property="og:description" content="Soluciones profesionales para la incubación de aves. Innovación, bienestar animal y eficiencia.">
-  <meta property="og:url" content="https://ovegg713.github.io/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Ovegg">
-  <meta property="og:locale" content="es_ES">
-  <meta property="og:image" content="https://ovegg713.github.io/ovegg-logo-og.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="alternate icon" href="favicon.png" type="image/png" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- hreflang (apuntan a esta misma URL; cuando tengas /en y /fr reales, cámbialos) -->
+  <link rel="alternate" href="https://ovegg713.github.io/" hreflang="es" />
+  <link rel="alternate" href="https://ovegg713.github.io/en/" hreflang="en" />
+  <link rel="alternate" href="https://ovegg713.github.io/fr/" hreflang="fr" />
+  <link rel="alternate" href="https://ovegg713.github.io/" hreflang="x-default" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ovegg | Innovación en incubación aviar" />
+  <meta property="og:description" content="Soluciones profesionales para incubación: incubadoras, nacedoras y criadoras con control preciso y eficiencia." />
+  <meta property="og:url" content="https://ovegg713.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Ovegg" />
+  <meta property="og:image" content="https://ovegg713.github.io/favicon.svg" />
 
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Ovegg | Innovación en incubación aviar">
-  <meta name="twitter:description" content="Soluciones profesionales para la incubación de aves. Innovación, bienestar animal y eficiencia.">
-  <meta name="twitter:image" content="https://ovegg713.github.io/ovegg-logo-og.png">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ovegg | Innovación en incubación aviar" />
+  <meta name="twitter:description" content="Soluciones profesionales para incubación: incubadoras, nacedoras y criadoras con control preciso y eficiencia." />
+  <meta name="twitter:image" content="https://ovegg713.github.io/favicon.svg" />
 
-  <!-- Datos estructurados JSON-LD -->
+  <!-- Schema.org -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Ovegg",
-    "url": "https://ovegg713.github.io/",
-    "email": "ovegg@duckgo",
-    "telephone": "+34 638882371",
-    "logo": "https://ovegg713.github.io/favicon.svg",
-    "sameAs": []
-  }
+  {"@context":"https://schema.org","@type":"Organization","name":"Ovegg","url":"https://ovegg713.github.io/","email":"ovegg@duckgo","telephone":"+34 638882371","logo":"https://ovegg713.github.io/favicon.svg"}
   </script>
 
-  <!-- tus estilos -->
-  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Fallback mínimo por si tu style.css tarda */
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5;margin:0;color:#101928;background:#fff}
+    .wrap{max-width:1100px;margin:0 auto;padding:16px}
+    header.site-header{position:sticky;top:0;background:#fff;border-bottom:1px solid #e5e7eb;z-index:50}
+    .brand{font-weight:700;font-size:20px;text-decoration:none;color:#111}
+    nav a{color:#111;text-decoration:none;padding:.25rem .6rem;border-radius:999px;border:1px solid #e5e7eb}
+    nav a:hover{background:#f3f4f6}
+    .hero{padding:36px 0}
+    .section{padding:24px 0}
+    .card{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:16px}
+    .grid{display:grid;gap:16px}
+    .grid-2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .grid-3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .grid-4{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+    .btn-row{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:.7rem 1rem;border-radius:12px;border:1px solid #111;text-decoration:none}
+    .btn-primary{background:#111;color:#fff}
+    .btn-outline{background:#fff;color:#111}
+    .kicker{text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;color:#6b7280}
+    .small{font-size:.9rem;color:#4b5563}
+    footer.site-footer{border-top:1px solid #e5e7eb;margin-top:24px;padding:24px 0}
+    /* Idiomas */
+    [data-lang]{display:none}
+    [data-lang].active{display:block}
+    .lang-pill{border:none;background:#eef2ff;color:#111;padding:.4rem .6rem;border-radius:999px;cursor:pointer}
+    .lang-pill.active{background:#111;color:#fff}
+  </style>
 </head>
 
 <body>
-  <header>
-    <h1>Ovegg</h1>
-    <h2>Innovación en incubación aviar</h2>
-  </header>
+  <!-- =================== HEADER (común) =================== -->
+  <header class="site-header">
+    <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;">
+      <a href="#" class="brand">Ovegg</a>
 
-  <main>
-    <section>
-      <h3>Soluciones profesionales para la incubación de aves</h3>
-      <p>Ovegg desarrolla equipos diseñados para ofrecer el máximo rendimiento, bienestar animal y eficiencia energética. Trabajamos con pasión para que cada incubación sea un éxito.</p>
-    </section>
-
-    <section>
-      <h3>Catálogo de productos</h3>
-      <p>Consulta nuestro catálogo de incubadoras, nacedoras y criadoras profesionales.</p>
-      <a href="catalogo.pdf" target="_blank">Descargar catálogo</a>
-    </section>
-  </main>
-
-  <footer>
-    <p>📞 +34 638 882 371 | ✉️ ovegg@duckgo</p>
-    <p>© 2025 Ovegg. Todos los derechos reservados.</p>
-  </footer>
-</body>
-</html>
-
-</head>
-<body>
-  <header class="site-header" role="banner">
-    <div class="container nav-container">
-      <a href="#inicio" class="brand" aria-label="Ovegg - Inicio">
-        <div class="logo" aria-hidden="true"></div>
-        <span class="brand-name">Ovegg</span>
-      </a>
-      <button class="nav-toggle" aria-label="Abrir menú" id="navToggle" aria-controls="mainNav" aria-expanded="false">☰</button>
-      <nav class="nav" id="mainNav" role="navigation" aria-label="Navegación principal">
-        <a href="#inicio" title="Inicio Ovegg">Inicio</a>
-        <div class="nav-item dropdown">
-          <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Línea Falcon</button>
-          <div class="dropdown-content" role="menu" aria-label="Submenú Línea Falcon">
-            <a href="#" role="menuitem">Cámara de precalentamiento</a>
-            <a href="#" role="menuitem">Incubadoras</a>
-            <a href="#" role="menuitem">Nacedoras</a>
-            <a href="#" role="menuitem">Criadoras</a>
-            <a href="#" role="menuitem">Vitaminas y accesorios</a>
-          </div>
-        </div>
-        <div class="nav-item dropdown">
-          <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Línea Avícola</button>
-          <div class="dropdown-content" role="menu" aria-label="Submenú Línea Avícola">
-            <a href="#" role="menuitem">Incubación completa</a>
-            <a href="#" role="menuitem">Incubadoras combinadas</a>
-            <a href="#" role="menuitem">Nacedoras</a>
-          </div>
-        </div>
-        <div class="nav-item dropdown">
-          <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Línea Avestruz/Emú</button>
-          <div class="dropdown-content" role="menu" aria-label="Submenú Línea Avestruz/Emú">
-            <a href="#" role="menuitem">Incubadoras</a>
-            <a href="#" role="menuitem">Nacedoras</a>
-          </div>
-        </div>
-        <div class="nav-item dropdown">
-          <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Línea Psitácidas</button>
-          <div class="dropdown-content" role="menu" aria-label="Submenú Línea Psitácidas">
-            <a href="#" role="menuitem">PSI-56</a>
-            <a href="#" role="menuitem">PSI-56 HS</a>
-          </div>
-        </div>
-        <a href="#catalogos" title="Catálogos de incubadoras y nacedoras">Catálogos</a>
-        <a href="#contacto" title="Contacto Ovegg">Contacto</a>
+      <!-- Menú principal sencillo (anclas a secciones del idioma activo) -->
+      <nav style="display:flex;gap:8px;flex-wrap:wrap">
+        <a href="#familias">Familias</a>
+        <a href="#lineas">Líneas</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#ventajas">Ventajas</a>
+        <a href="#faq">FAQ</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#contacto">Contacto</a>
       </nav>
+
+      <!-- Selector de idioma -->
+      <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap">
+        <span class="small">Idioma:</span>
+        <button class="lang-pill" data-setlang="es">🇪🇸 ES</button>
+        <button class="lang-pill" data-setlang="en">🇬🇧 EN</button>
+        <button class="lang-pill" data-setlang="fr">🇫🇷 FR</button>
+      </div>
     </div>
   </header>
 
-  <main id="inicio">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">innovación en incubación aviar</p>
-          <h1>Innovación y cuidado que impulsan el futuro de la incubación aviar</h1>
-          <p class="sub">En Ovegg desarrollamos y distribuimos <strong>incubadoras</strong>, <strong>nacedoras</strong> y <strong>criadoras</strong> confiables. Priorizamos el <strong>bienestar animal</strong>, la eficiencia energética y el éxito de cada incubación.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#catalogos">Ver catálogo</a>
-            <a class="btn btn-outline" href="#contacto">Contactar</a>
-          </div>
-        </div>
-        <div class="hero-media" aria-hidden="true">
-          <div class="media-placeholder" role="img" aria-label="Equipos de incubación Ovegg">Imagen/Slider</div>
-        </div>
-      </div>
-    </section>
+  <!-- =================== CONTENIDOS EN 3 IDIOMAS =================== -->
 
-    <section class="values" id="sobre">
-      <div class="container">
+  <!-- ========== ESPAÑOL ========== -->
+  <main id="lang-es" data-lang="es" class="active">
+    <div class="wrap">
+      <!-- HERO -->
+      <section id="inicio" class="hero section">
+        <p class="kicker">innovación en incubación aviar</p>
+        <h1>Innovación y cuidado que impulsan el futuro de la incubación aviar</h1>
+        <p>En Ovegg desarrollamos y distribuimos <strong>incubadoras, nacedoras, criadoras</strong> y <strong>cámaras de precalentamiento</strong> con control preciso de temperatura, humedad y ventilación.</p>
+        <p>Diseñadas para el <strong>bienestar animal</strong>, la eficiencia energética y resultados consistentes en cada ciclo.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#catalogo">Ver catálogo</a>
+          <a class="btn btn-outline" href="#contacto">Contactar</a>
+        </div>
+        <div class="small" style="margin-top:10px">
+          <strong>Cámara de precalentamiento · Incubadoras · Nacedoras · Criadoras · Vitaminas y accesorios</strong>
+        </div>
+      </section>
+
+      <!-- SOBRE -->
+      <section id="sobre" class="section card">
         <h2>Sobre Ovegg</h2>
-        <p>Somos una marca comprometida con la excelencia en <strong>incubación aviar</strong>. Combinamos experiencia técnica, sensibilidad ambiental y atención cercana para diseñar soluciones que respetan la naturaleza de cada especie y mejoran la productividad.</p>
-      </div>
-      <div class="container cards-3" style="margin-top:20px">
-        <article class="card">
-          <div class="icon" aria-hidden="true"></div>
-          <h3>Rapidez</h3>
-          <p>Entregas ágiles, soporte inmediato y servicio técnico cuando más lo necesitas.</p>
-        </article>
-        <article class="card">
-          <div class="icon" aria-hidden="true"></div>
-          <h3>Innovación</h3>
-          <p>Tecnología eficiente para un control preciso de ambiente, temperatura y humedad.</p>
-        </article>
-        <article class="card">
-          <div class="icon" aria-hidden="true"></div>
-          <h3>Compromiso</h3>
-          <p>Priorizamos el bienestar animal, la confianza de nuestros clientes y la sostenibilidad.</p>
-        </article>
-      </div>
-    </section>
+        <p>Somos una marca comprometida con la excelencia en incubación aviar. Combinamos experiencia técnica, sensibilidad ambiental y atención cercana para diseñar soluciones que respetan la naturaleza de cada especie y mejoran la productividad.</p>
+        <ul>
+          <li><strong>Rapidez:</strong> entregas ágiles, soporte inmediato y servicio técnico cuando más lo necesitas.</li>
+          <li><strong>Innovación:</strong> control preciso de ambiente, temperatura y humedad con sensores fiables.</li>
+          <li><strong>Compromiso:</strong> bienestar animal, confianza de nuestros clientes y sostenibilidad.</li>
+        </ul>
+      </section>
 
-    <section class="lines" id="lineas">
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">Nuestras líneas</p>
-          <h2>Gama de incubadoras, nacedoras y criadoras</h2>
-          <p class="sub">Soluciones para avicultura, especies exóticas y proyectos profesionales.</p>
+      <!-- FAMILIAS -->
+      <section id="familias" class="section">
+        <h2>Familias de producto</h2>
+        <p class="small">Descripción de cada solución para ayudarte a elegir.</p>
+        <div class="grid grid-3" style="margin-top:16px">
+          <article class="card">
+            <h3>Cámara de precalentamiento</h3>
+            <p>Reduce choques térmicos y homogeneiza lotes antes de la incubación. Flujo de aire optimizado y control estable de temperatura mejoran la tasa de eclosión.</p>
+            <ul class="small"><li>Precalentamiento gradual</li><li>Estabilidad térmica</li><li>Mejora de rendimiento</li></ul>
+          </article>
+          <article class="card">
+            <h3>Incubadoras</h3>
+            <p>Alta estabilidad térmica y de humedad con distribución uniforme. Sensores precisos y controles intuitivos aseguran ciclos consistentes.</p>
+            <ul class="small"><li>Control de Tª y HR</li><li>Ventilación homogénea</li><li>Limpieza sencilla</li></ul>
+          </article>
+          <article class="card">
+            <h3>Nacedoras</h3>
+            <p>Entorno optimizado para el nacimiento: humedad adaptativa, bandejas y parrillas adecuadas y diseño interior que facilita la bioseguridad.</p>
+            <ul class="small"><li>Humedad adaptativa</li><li>Parrillas/bandejas</li><li>Fácil higiene</li></ul>
+          </article>
+          <article class="card">
+            <h3>Criadoras</h3>
+            <p>Primeras semanas con calor estable, ventilación suave y accesos cómodos para manejo y suministro. Favorecen el bienestar y la supervivencia.</p>
+            <ul class="small"><li>Confort térmico</li><li>Flujo de aire suave</li><li>Mantenimiento fácil</li></ul>
+          </article>
+          <article class="card">
+            <h3>Vitaminas y accesorios</h3>
+            <p>Aditivos de apoyo y consumibles: desinfectantes compatibles, termohigrómetros, bandejas y repuestos para mantener el rendimiento.</p>
+            <ul class="small"><li>Consumibles y repuestos</li><li>Instrumentación</li><li>Compatibilidad garantizada</li></ul>
+          </article>
         </div>
-        <div class="grid-4">
-          <a class="line-card" href="#catalogos">
-            <div class="img" role="img" aria-label="Línea Falcon: incubación de alto rendimiento"></div>
-            <div class="line-info">
-              <h3>Línea Falcon</h3>
-              <p>Rendimiento y estabilidad térmica en grandes volúmenes de incubación.</p>
-            </div>
-          </a>
-          <a class="line-card" href="#catalogos">
-            <div class="img" role="img" aria-label="Línea Avícola para alta productividad"></div>
-            <div class="line-info">
-              <h3>Línea Avícola</h3>
-              <p>Equipos fiables para ciclos completos: incubación, nacimiento y cría.</p>
-            </div>
-          </a>
-          <a class="line-card" href="#catalogos">
-            <div class="img" role="img" aria-label="Línea Avestruz y Emú"></div>
-            <div class="line-info">
-              <h3>Línea Avestruz/Emú</h3>
-              <p>Control ambiental adaptado a especies de gran tamaño.</p>
-            </div>
-          </a>
-          <a class="line-card" href="#catalogos">
-            <div class="img" role="img" aria-label="Línea Psitácidas para cría responsable"></div>
-            <div class="line-info">
-              <h3>Línea Psitácidas</h3>
-              <p>Precisión y cuidado para aves de alto valor y sensibilidad.</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="catalog" id="catalogos">
-      <div class="container cat-grid">
-        <div class="cat-media" role="img" aria-label="Catálogo Ovegg: incubadoras y nacedoras"></div>
-        <div>
-          <p class="eyebrow">Catálogo general</p>
-          <h3>Explora toda la gama de productos</h3>
-          <p>Incubadoras, nacedoras, criadoras, accesorios y consumibles. Detalles técnicos, capacidades y recomendaciones de uso.</p>
-          <div class="actions">
-            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Ver PDF</a>
-            <a class="btn btn-outline" href="#" download>Descargar</a>
-          </div>
-          <p class="muted" style="margin-top:8px">Añadiremos el enlace al PDF cuando lo tengas subido.</p>
+      <!-- LÍNEAS -->
+      <section id="lineas" class="section">
+        <h2>Gama de incubadoras, nacedoras y criadoras</h2>
+        <p>Soluciones para avicultura, especies exóticas y proyectos profesionales.</p>
+        <div class="grid grid-2" style="margin-top:16px">
+          <article class="card"><h3>Línea Falcon</h3><p>Estabilidad térmica y capacidad para grandes volúmenes. Ideal para centros con alta rotación y uniformidad lote a lote.</p></article>
+          <article class="card"><h3>Línea Avícola</h3><p>Ciclos completos de incubación, nacimiento y cría. Equipos fiables y eficientes para granjas y proyectos en expansión.</p></article>
+          <article class="card"><h3>Línea Avestruz/Emú</h3><p>Control ambiental adaptado a especies de gran tamaño. Configuraciones robustas para cascarones gruesos.</p></article>
+          <article class="card"><h3>Línea Psitácidas</h3><p>Precisión para aves de alto valor y sensibilidad. Ajustes finos de Tª/HR y flujo de aire suave.</p></article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="contact" id="contacto">
-      <div class="container contact-inner">
-        <div class="contact-copy">
-          <p class="eyebrow light">¿Necesitas asesoramiento?</p>
-          <h3>Estamos listos para ayudarte</h3>
-          <p>Atención de lunes a viernes, de 9:00 a 17:00.</p>
-          <div class="actions">
-            <a class="btn btn-invert" href="tel:+34638882371">Llamar</a>
-            <a class="btn btn-ghost" href="mailto:ovegg@duckgo">Enviar email</a>
-          </div>
+      <!-- SERVICIOS -->
+      <section id="servicios" class="section card">
+        <h2>Servicios Ovegg</h2>
+        <div class="grid grid-3">
+          <div><h3>Asesoramiento</h3><p>Elegimos contigo el equipo y los parámetros adecuados según especie, volumen y objetivos.</p></div>
+          <div><h3>Instalación y puesta en marcha</h3><p>Arranque inicial, verificación de sensores y formación básica de uso y mantenimiento.</p></div>
+          <div><h3>Soporte y repuestos</h3><p>Respuesta ágil, piezas originales y recomendaciones de mejora continua.</p></div>
         </div>
-        <form class="contact-form" action="mailto:ovegg@duckgo" method="post" enctype="text/plain">
-          <div class="row">
-            <label class="sr-only" for="c-nombre">Nombre</label>
-            <input id="c-nombre" type="text" name="Nombre" placeholder="Nombre" required>
-            <label class="sr-only" for="c-email">Email</label>
-            <input id="c-email" type="email" name="Email" placeholder="Email" required>
-          </div>
-          <label class="sr-only" for="c-asunto">Asunto</label>
-          <input id="c-asunto" type="text" name="Asunto" placeholder="Asunto">
-          <label class="sr-only" for="c-mensaje">Mensaje</label>
-          <textarea id="c-mensaje" name="Mensaje" rows="5" placeholder="Mensaje"></textarea>
-          <button type="submit" class="btn btn-invert">Enviar</button>
-        </form>
-      </div>
-    </section>
+      </section>
 
-    <section class="metrics" aria-label="Métricas y confianza">
-      <div class="container metrics-grid">
-        <div class="metric"><div class="kpi">+50</div><div class="label">Años de experiencia</div></div>
-        <div class="metric"><div class="kpi">5K+</div><div class="label">Máquinas vendidas</div></div>
-        <div class="metric"><div class="kpi">20+</</div><div class="label">Premios</div></div>
-        <div class="metric"><div class="kpi">30+</div><div class="label">Profesionales</div></div>
-      </div>
-    </section>
+      <!-- VENTAJAS -->
+      <section id="ventajas" class="section">
+        <h2>Ventajas Ovegg</h2>
+        <div class="grid grid-3" style="margin-top:16px">
+          <article class="card"><h3>Precisión</h3><p>Control fino de temperatura y humedad con sensores fiables y calibración estable.</p></article>
+          <article class="card"><h3>Eficiencia</h3><p>Consumo optimizado y motores eficientes para reducir costes sin perder rendimiento.</p></article>
+          <article class="card"><h3>Higiene y bioseguridad</h3><p>Diseño interior accesible, superficies fáciles de limpiar y protocolo recomendado.</p></article>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section card">
+        <h2>Preguntas frecuentes</h2>
+        <div class="grid grid-2">
+          <div><h3>¿Incubadora o nacedora?</h3><p>La incubadora gestiona el desarrollo embrionario; la nacedora optimiza las condiciones del nacimiento (especialmente humedad y ventilación).</p></div>
+          <div><h3>¿Necesito precalentamiento?</h3><p>Recomendable con lotes grandes o huevos fríos: mejora la homogeneidad y reduce choques térmicos.</p></div>
+          <div><h3>¿Qué mantenimiento requieren?</h3><p>Limpieza entre ciclos, revisión de sensores y verificación de ventilación. Entregamos guía sencilla.</p></div>
+          <div><h3>¿Trabajáis con exóticas?</h3><p>Sí, configuraciones específicas para psitácidas y ratites (avestruz/emú).</p></div>
+        </div>
+      </section>
+
+      <!-- CATÁLOGO -->
+      <section id="catalogo" class="section card">
+        <h2>Catálogos y documentación</h2>
+        <p>Explora especificaciones, capacidades y condiciones de uso.</p>
+        <div class="btn-row">
+          <a class="btn btn-outline" href="catalogo.pdf" target="_blank" rel="noopener">Catálogo general (PDF)</a>
+          <a class="btn btn-primary" href="catalogo.pdf" download>Descargar</a>
+        </div>
+        <div class="small" style="margin-top:10px">También disponibles: Línea Falcon, Línea Avícola, Avestruz/Emú, Psitácidas (añadiremos los enlaces cuando subas los PDF).</div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section id="contacto" class="section card">
+        <h2>¿Necesitas asesoramiento?</h2>
+        <p>Atención de lunes a viernes, de 9:00 a 17:00.</p>
+        <div class="btn-row"><a class="btn btn-outline" href="tel:+34638882371">Llamar</a><a class="btn btn-primary" href="mailto:ovegg@duckgo">Enviar email</a></div>
+      </section>
+
+      <!-- MÉTRICAS -->
+      <section class="section">
+        <div class="grid grid-4">
+          <div class="card"><h3>+50</h3><p>Años de experiencia</p></div>
+          <div class="card"><h3>5K+</h3><p>Máquinas vendidas</p></div>
+          <div class="card"><h3>20+</h3><p>Premios</p></div>
+          <div class="card"><h3>30+</h3><p>Profesionales</p></div>
+        </div>
+      </section>
+    </div>
   </main>
 
+  <!-- ========== INGLÉS ========== -->
+  <main id="lang-en" data-lang="en">
+    <div class="wrap">
+      <section id="home" class="hero section">
+        <p class="kicker">incubation innovation</p>
+        <h1>Innovation and care powering the future of bird incubation</h1>
+        <p>We design and supply <strong>incubators, hatchers, brooders</strong> and <strong>preheating chambers</strong> with precise control of temperature, humidity and airflow.</p>
+        <p>Built for <strong>animal welfare</strong>, energy efficiency and consistent results every cycle.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#catalog">View catalog</a>
+          <a class="btn btn-outline" href="#contact">Contact</a>
+        </div>
+        <div class="small" style="margin-top:10px"><strong>Preheating chamber · Incubators · Hatchers · Brooders · Vitamins & accessories</strong></div>
+      </section>
+
+      <section id="about" class="section card">
+        <h2>About Ovegg</h2>
+        <p>We combine technical expertise, environmental awareness and close support to deliver reliable solutions that respect each species and improve productivity.</p>
+        <ul><li><strong>Speed:</strong> fast deliveries, prompt support and on-time service.</li><li><strong>Innovation:</strong> precise control of environment, temperature and humidity.</li><li><strong>Commitment:</strong> animal welfare, customer trust and sustainability.</li></ul>
+      </section>
+
+      <section id="families" class="section">
+        <h2>Product families</h2>
+        <p class="small">Clear description to help you choose the right solution.</p>
+        <div class="grid grid-3" style="margin-top:16px">
+          <article class="card"><h3>Preheating chamber</h3><p>Reduces thermal shock and homogenizes batches before incubation. Optimized airflow and stable temperature improve hatch rate.</p><ul class="small"><li>Gradual preheating</li><li>Thermal stability</li><li>Better performance</li></ul></article>
+          <article class="card"><h3>Incubators</h3><p>High thermal and humidity stability with uniform distribution. Accurate sensors and intuitive controls ensure consistent cycles.</p><ul class="small"><li>Temp/RH control</li><li>Even ventilation</li><li>Easy cleaning</li></ul></article>
+          <article class="card"><h3>Hatchers</h3><p>Optimized final stage: adaptive humidity, suitable trays and interior design that supports biosafety.</p><ul class="small"><li>Adaptive humidity</li><li>Trays & grids</li><li>Hygiene</li></ul></article>
+          <article class="card"><h3>Brooders</h3><p>Stable heat, gentle airflow and convenient access for handling and supply. Fosters welfare and survival.</p><ul class="small"><li>Thermal comfort</li><li>Soft airflow</li><li>Easy maintenance</li></ul></article>
+          <article class="card"><h3>Vitamins & accessories</h3><p>Support additives and consumables: compatible disinfectants, thermo-hygrometers, trays and spares.</p><ul class="small"><li>Consumables & spares</li><li>Instrumentation</li><li>Assured compatibility</li></ul></article>
+        </div>
+      </section>
+
+      <section id="lines" class="section">
+        <h2>Incubation, hatching & brooding lines</h2>
+        <p>Solutions for poultry, exotic species and professional projects.</p>
+        <div class="grid grid-2" style="margin-top:16px">
+          <article class="card"><h3>Falcon line</h3><p>Thermal stability for large volumes. Ideal for high-turnover centres and batch-to-batch uniformity.</p></article>
+          <article class="card"><h3>Poultry line</h3><p>Full cycles: incubation, hatching and brooding. Reliable & efficient equipment for farms and growth plans.</p></article>
+          <article class="card"><h3>Ostrich/Emu</h3><p>Environmental control for large species and thick shells with robust configurations.</p></article>
+          <article class="card"><h3>Psittacines</h3><p>Fine control for high-value sensitive birds. Gentle airflow and precise Temp/RH.</p></article>
+        </div>
+      </section>
+
+      <section id="services-en" class="section card">
+        <h2>Ovegg services</h2>
+        <div class="grid grid-3"><div><h3>Advisory</h3><p>We help choose the right equipment and parameters by species, volume and goals.</p></div><div><h3>Installation & commissioning</h3><p>Startup, sensor checks and basic training on use and maintenance.</p></div><div><h3>Support & spares</h3><p>Agile response, original parts and continuous improvement tips.</p></div></div>
+      </section>
+
+      <section id="advantages" class="section">
+        <h2>Advantages</h2>
+        <div class="grid grid-3" style="margin-top:16px"><article class="card"><h3>Precision</h3><p>Fine Temp/RH control with reliable sensors and stable calibration.</p></article><article class="card"><h3>Efficiency</h3><p>Optimized consumption and efficient motors to cut costs.</p></article><article class="card"><h3>Hygiene & biosafety</h3><p>Accessible interiors, easy-to-clean surfaces and recommended protocol.</p></article></div>
+      </section>
+
+      <section id="faq-en" class="section card">
+        <h2>FAQ</h2>
+        <div class="grid grid-2"><div><h3>Incubator vs hatcher</h3><p>Incubator manages embryo development; hatcher optimizes hatching environment (especially humidity & ventilation).</p></div><div><h3>Do I need preheating?</h3><p>Recommended for large or cold batches: better homogeneity and fewer thermal shocks.</p></div><div><h3>Maintenance?</h3><p>Cleaning between cycles, sensor checks and ventilation verification. We provide a simple guide.</p></div><div><h3>Exotic species?</h3><p>Yes, specific configurations for psittacines and ratites (ostrich/emu).</p></div></div>
+      </section>
+
+      <section id="catalog" class="section card">
+        <h2>Catalogs & documentation</h2>
+        <p>Explore specs, capacities and usage conditions.</p>
+        <div class="btn-row"><a class="btn btn-outline" href="catalogo.pdf" target="_blank" rel="noopener">General catalog (PDF)</a><a class="btn btn-primary" href="catalogo.pdf" download>Download</a></div>
+        <div class="small" style="margin-top:10px">Falcon line, Poultry, Ostrich/Emu, Psittacines (links will be added when PDFs are uploaded).</div>
+      </section>
+
+      <section id="contact" class="section card">
+        <h2>Contact</h2>
+        <p>Mon–Fri, 9:00–17:00.</p>
+        <div class="btn-row"><a class="btn btn-outline" href="tel:+34638882371">Call</a><a class="btn btn-primary" href="mailto:ovegg@duckgo">Email</a></div>
+      </section>
+
+      <section class="section">
+        <div class="grid grid-4">
+          <div class="card"><h3>+50</h3><p>Years of expertise</p></div>
+          <div class="card"><h3>5K+</h3><p>Units delivered</p></div>
+          <div class="card"><h3>20+</h3><p>Awards</p></div>
+          <div class="card"><h3>30+</h3><p>Professionals</p></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ========== FRANCÉS ========== -->
+  <main id="lang-fr" data-lang="fr">
+    <div class="wrap">
+      <section id="accueil" class="hero section">
+        <p class="kicker">innovation en incubation</p>
+        <h1>Innovation et soin au service de l’incubation avicole</h1>
+        <p>Nous concevons et distribuons des <strong>incubateurs, éclosoirs, éleveuses</strong> et <strong>chambres de préchauffage</strong> avec contrôle précis de la température, de l’humidité et de la ventilation.</p>
+        <p>Conçus pour le <strong>bien-être animal</strong>, l’efficacité énergétique et des résultats constants à chaque cycle.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#catalogue">Voir le catalogue</a>
+          <a class="btn btn-outline" href="#contact-fr">Contact</a>
+        </div>
+        <div class="small" style="margin-top:10px"><strong>Chambre de préchauffage · Incubateurs · Éclosoirs · Éleveuses · Vitamines & accessoires</strong></div>
+      </section>
+
+      <section id="a-propos" class="section card">
+        <h2>À propos d’Ovegg</h2>
+        <p>Nous allions expertise technique, sensibilité environnementale et accompagnement de proximité pour offrir des solutions fiables qui respectent chaque espèce et améliorent la productivité.</p>
+        <ul><li><strong>Rapidité :</strong> livraisons agiles et support réactif.</li><li><strong>Innovation :</strong> contrôle précis de l’environnement, température et humidité.</li><li><strong>Engagement :</strong> bien-être animal, confiance client et durabilité.</li></ul>
+      </section>
+
+      <section id="familles" class="section">
+        <h2>Familles de produits</h2>
+        <p class="small">Description de chaque solution pour vous guider.</p>
+        <div class="grid grid-3" style="margin-top:16px">
+          <article class="card"><h3>Chambre de préchauffage</h3><p>Réduit les chocs thermiques et homogénéise les lots avant l’incubation. Flux d’air optimisé et température stable améliorent le taux d’éclosion.</p><ul class="small"><li>Préchauffage progressif</li><li>Stabilité thermique</li><li>Meilleure performance</li></ul></article>
+          <article class="card"><h3>Incubateurs</h3><p>Grande stabilité thermique et d’humidité avec distribution uniforme. Capteurs précis et commandes intuitives assurent des cycles réguliers.</p><ul class="small"><li>Contrôle T°/HR</li><li>Ventilation homogène</li><li>Nettoyage facile</li></ul></article>
+          <article class="card"><h3>Éclosoirs</h3><p>Phase finale optimisée : humidité adaptée, plateaux et grilles appropriés et design intérieur favorisant la biosécurité.</p><ul class="small"><li>Humidité adaptative</li><li>Plateaux & grilles</li><li>Hygiène facilitée</li></ul></article>
+          <article class="card"><h3>Éleveuses</h3><p>Semaines initiales avec chaleur stable, flux d’air doux et accès pratiques pour la gestion et l’alimentation.</p><ul class="small"><li>Confort thermique</li><li>Flux d’air doux</li><li>Entretien aisé</li></ul></article>
+          <article class="card"><h3>Vitamines & accessoires</h3><p>Additifs et consommables : désinfectants compatibles, thermo-hygromètres, plateaux et pièces de rechange.</p><ul class="small"><li>Consommables & pièces</li><li>Instrumentation</li><li>Compatibilité assurée</li></ul></article>
+        </div>
+      </section>
+
+      <section id="gammes" class="section">
+        <h2>Gammes d’incubation, éclosion & élevage</h2>
+        <p>Solutions pour aviculture, espèces exotiques et projets professionnels.</p>
+        <div class="grid grid-2" style="margin-top:16px">
+          <article class="card"><h3>Gamme Falcon</h3><p>Stabilité thermique et grands volumes. Idéal pour centres à forte rotation et uniformité inter-lots.</p></article>
+          <article class="card"><h3>Gamme Avicole</h3><p>Cycles complets : incubation, éclosion et élevage. Équipements fiables et efficaces.</p></article>
+          <article class="card"><h3>Autruche/Émeu</h3><p>Contrôle environnemental pour grandes espèces et coquilles épaisses.</p></article>
+          <article class="card"><h3>Psittacidés</h3><p>Réglages fins pour oiseaux sensibles de grande valeur. Flux d’air doux et précision T°/HR.</p></article>
+        </div>
+      </section>
+
+      <section id="services-fr" class="section card">
+        <h2>Services Ovegg</h2>
+        <div class="grid grid-3"><div><h3>Conseil</h3><p>Choix du matériel et des paramètres selon l’espèce, le volume et les objectifs.</p></div><div><h3>Installation & mise en service</h3><p>Démarrage, vérification des capteurs et formation de base.</p></div><div><h3>Support & pièces</h3><p>Réponse agile, pièces d’origine et recommandations d’amélioration continue.</p></div></div>
+      </section>
+
+      <section id="avantages" class="section">
+        <h2>Avantages</h2>
+        <div class="grid grid-3" style="margin-top:16px"><article class="card"><h3>Précision</h3><p>Contrôle fin T°/HR avec capteurs fiables et calibration stable.</p></article><article class="card"><h3>Efficacité</h3><p>Consommation optimisée et moteurs performants pour réduire les coûts.</p></article><article class="card"><h3>Hygiène & biosécurité</h3><p>Intérieurs accessibles, surfaces faciles à nettoyer et protocole conseillé.</p></article></div>
+      </section>
+
+      <section id="faq-fr" class="section card">
+        <h2>FAQ</h2>
+        <div class="grid grid-2"><div><h3>Incubateur vs éclosoir</h3><p>Incubateur = développement embryonnaire ; éclosoir = conditions d’éclosion (surtout humidité & ventilation).</p></div><div><h3>Préchauffage ?</h3><p>Recommandé pour lots importants ou froids : meilleure homogénéité et moins de chocs thermiques.</p></div><div><h3>Entretien ?</h3><p>Nettoyage entre cycles, vérification des capteurs et de la ventilation. Guide fourni.</p></div><div><h3>Espèces exotiques ?</h3><p>Oui, configurations spécifiques pour psittacidés et ratites (autruche/émeu).</p></div></div>
+      </section>
+
+      <section id="catalogue" class="section card">
+        <h2>Catalogues & documentation</h2>
+        <p>Explorez les spécifications, capacités et conditions d’utilisation.</p>
+        <div class="btn-row"><a class="btn btn-outline" href="catalogo.pdf" target="_blank" rel="noopener">Catalogue général (PDF)</a><a class="btn btn-primary" href="catalogo.pdf" download>Télécharger</a></div>
+        <div class="small" style="margin-top:10px">Gamme Falcon, Avicole, Autruche/Émeu, Psittacidés (liens ajoutés dès que les PDF seront disponibles).</div>
+      </section>
+
+      <section id="contact-fr" class="section card">
+        <h2>Contact</h2>
+        <p>Lun–Ven, 9:00–17:00.</p>
+        <div class="btn-row"><a class="btn btn-outline" href="tel:+34638882371">Appeler</a><a class="btn btn-primary" href="mailto:ovegg@duckgo">Email</a></div>
+      </section>
+
+      <section class="section">
+        <div class="grid grid-4">
+          <div class="card"><h3>+50</h3><p>Années d’expérience</p></div>
+          <div class="card"><h3>5K+</h3><p>Machines livrées</p></div>
+          <div class="card"><h3>20+</h3><p>Récompenses</p></div>
+          <div class="card"><h3>30+</h3><p>Professionnels</p></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- =================== FOOTER (común) =================== -->
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <div class="brand"><div class="logo" aria-hidden="true"></div><div class="brand-name">Ovegg</div></div>
-        <p class="muted"><strong>Ovegg</strong> — Innovación en incubación aviar<br>
-        📞 +34 638 882 371 · ✉️ ovegg@duckgo<br>
-        Comprometidos con la tecnología, la naturaleza y tu éxito.</p>
-        <div class="socials" aria-label="Redes sociales">
-          <a href="#" aria-label="Facebook"></a>
-          <a href="#" aria-label="X"></a>
-          <a href="#" aria-label="Instagram"></a>
+    <div class="wrap">
+      <div class="grid grid-3">
+        <div>
+          <div class="brand" style="margin-bottom:8px;font-weight:700">Ovegg</div>
+          <p class="small">📞 +34 638 882 371 · ✉️ <a href="mailto:ovegg@duckgo">ovegg@duckgo</a></p>
+          <p class="small">Comprometidos con la tecnología, la naturaleza y tu éxito.</p>
+        </div>
+        <div>
+          <h3>Líneas</h3>
+          <nav class="link-list">
+            <a href="#lineas">Línea Falcon</a>
+            <a href="#lineas">Línea Avícola</a>
+            <a href="#lineas">Avestruz/Emú</a>
+            <a href="#lineas">Psitácidas</a>
+          </nav>
+        </div>
+        <div>
+          <h3>Secciones</h3>
+          <nav class="link-list">
+            <a href="#familias">Familias</a>
+            <a href="#catalogo">Catálogos</a>
+            <a href="#contacto">Contacto</a>
+          </nav>
         </div>
       </div>
-      <div>
-        <div class="foot-title">Líneas</div>
-        <ul class="foot-list">
-          <li><a href="#lineas">Línea Falcon</a></li>
-          <li><a href="#lineas">Línea Avícola</a></li>
-          <li><a href="#lineas">Línea Avestruz/Emú</a></li>
-          <li><a href="#lineas">Línea Psitácidas</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="foot-title">Otras páginas</div>
-        <ul class="foot-list">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#catalogos">Catálogos</a></li>
-          <li><a href="#contacto">Contáctanos</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="foot-title">Privacidad</div>
-        <ul class="foot-list">
-          <li><a href="#">Política de privacidad</a></li>
-          <li><a href="#">Términos de servicio</a></li>
-        </ul>
-      </div>
+      <p class="small" style="margin-top:16px">© 2025 Ovegg. Todos los derechos reservados.</p>
     </div>
-    <div class="copyright">© <span id="year"></span> Ovegg. Todos los derechos reservados.</div>
   </footer>
 
-  <!-- JSON-LD: Organization + Website + FAQ -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Ovegg",
-    "url": "https://ovegg713.github.io/",
-    "logo": "https://ovegg713.github.io/logo.png",
-    "email": "ovegg@duckgo",
-    "telephone": "+34638882371",
-    "sameAs": []
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Ovegg",
-    "url": "https://ovegg713.github.io/",
-    "inLanguage": "es-ES",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://ovegg713.github.io/?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "¿Envían equipos de incubación en toda España?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sí, realizamos envíos a toda España peninsular y Baleares. Consultar condiciones para Canarias."
-      }
-    }, {
-      "@type": "Question",
-      "name": "¿Qué garantía ofrecen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ofrecemos garantía oficial del fabricante y soporte técnico postventa. Para detalles de cada equipo, consúltenos."
-      }
-    }, {
-      "@type": "Question",
-      "name": "¿Asesoran sobre capacidad y condiciones de incubación?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sí, nuestro equipo técnico puede recomendar capacidad, parámetros y mantenimiento según la especie y el objetivo."
-      }
-    }]
-  }
-  </script>
-
+  <!-- =================== JS de idioma =================== -->
   <script>
-    const navToggle = document.getElementById('navToggle');
-    const mainNav = document.getElementById('mainNav');
-    if (navToggle) { navToggle.addEventListener('click', () => { 
-      const opened = mainNav.classList.toggle('show'); 
-      navToggle.setAttribute('aria-expanded', opened ? 'true' : 'false');
-    })}
-    document.querySelectorAll('.dropdown .dropbtn').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        if (window.matchMedia('(max-width: 720px)').matches) {
-          const parent = e.target.closest('.dropdown');
-          parent.classList.toggle('open');
-          const expanded = parent.classList.contains('open');
-          btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
-        }
-      });
-    });
-    document.getElementById('year').textContent = new Date().getFullYear();
+    (function(){
+      const pickers = document.querySelectorAll('[data-setlang]');
+      const sections = document.querySelectorAll('[data-lang]');
+      function setLang(lang){
+        sections.forEach(s => s.classList.toggle('active', s.dataset.lang === lang));
+        pickers.forEach(b => b.classList.toggle('active', b.dataset.setlang === lang));
+        document.documentElement.lang = lang;
+        localStorage.setItem('ovegg_lang', lang);
+        // Ajustar anclas del menú a la sección activa
+        const nav = document.querySelector('header nav');
+        if(!nav) return;
+        const ids = { es:{familias:'#familias',lineas:'#lineas',servicios:'#servicios',ventajas:'#ventajas',faq:'#faq',catalogo:'#catalogo',contacto:'#contacto'},
+                      en:{familias:'#families',lineas:'#lines',servicios:'#services-en',ventajas:'#advantages',faq:'#faq-en',catalogo:'#catalog',contacto:'#contact'},
+                      fr:{familias:'#familles',lineas:'#gammes',servicios:'#services-fr',ventajas:'#avantages',faq:'#faq-fr',catalogo:'#catalogue',contacto:'#contact-fr'} };
+        const map = ids[lang];
+        const links = nav.querySelectorAll('a[href^="#"], a[href="#"]');
+        links.forEach(a=>{
+          const txt=a.textContent.trim().toLowerCase();
+          if(txt.includes('famil')||txt.includes('families')) a.href=map.familias;
+          else if(txt.includes('línea')||txt.includes('line')||txt.includes('gamme')) a.href=map.lineas;
+          else if(txt.includes('servi')) a.href=map.servicios;
+          else if(txt.includes('ventaj')||txt.includes('advant')||txt.includes('avantage')) a.href=map.ventajas;
+          else if(txt.includes('faq')) a.href=map.faq;
+          else if(txt.includes('catá')||txt.includes('catalog')) a.href=map.catalogo;
+          else if(txt.includes('contact')) a.href=map.contacto;
+        });
+      }
+      pickers.forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.setlang)));
+      // Cargar preferencia
+      const saved = localStorage.getItem('ovegg_lang') || 'es';
+      setLang(saved);
+    })();
   </script>
 </body>
 </html>
