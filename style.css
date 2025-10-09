@@ -88,10 +88,20 @@ a:hover{text-decoration:underline}
   color:var(--ink-70)
 }
 /* --- Logo --- */
-.brand {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+.brand img.logo {
+  height: 72px; /* aumenta el tamaño */
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.6));
+  transition: transform 0.3s ease, filter 0.3s ease;
+  margin-left: 8px; /* separa un poco del borde izquierdo */
+}
+
+.brand img.logo:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.8));
+}
+
 }
 .brand img {
   height: 44px;   /* ajusta aquí si se ve muy pequeño o muy grande */
